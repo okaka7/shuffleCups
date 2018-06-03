@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="46l-dI-iZQ">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTx-6G-bTU" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9RI-hP-b4q"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAO-4o-MLo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CFR-YH-Zkr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Desk" translatesAutoresizingMaskIntoConstraints="NO" id="DK2-LJ-ebL">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="ltF-uk-PhA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="600.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DK2-LJ-ebL" firstAttribute="top" secondItem="CFR-YH-Zkr" secondAttribute="bottom" multiplier="0.9" id="2Dq-xl-cg9"/>
+                            <constraint firstItem="ltF-uk-PhA" firstAttribute="leading" secondItem="CFR-YH-Zkr" secondAttribute="leading" id="Ckf-eQ-jmf"/>
+                            <constraint firstItem="DK2-LJ-ebL" firstAttribute="trailing" secondItem="CFR-YH-Zkr" secondAttribute="trailing" id="Fse-dG-wdf"/>
+                            <constraint firstItem="DK2-LJ-ebL" firstAttribute="leading" secondItem="CFR-YH-Zkr" secondAttribute="leading" id="LpZ-e1-gWY"/>
+                            <constraint firstItem="DK2-LJ-ebL" firstAttribute="height" secondItem="CFR-YH-Zkr" secondAttribute="height" multiplier="0.1" id="b2O-xo-1ZY"/>
+                            <constraint firstItem="ltF-uk-PhA" firstAttribute="height" secondItem="CFR-YH-Zkr" secondAttribute="height" multiplier="0.9" id="gmz-rp-t2p"/>
+                            <constraint firstItem="ltF-uk-PhA" firstAttribute="trailing" secondItem="CFR-YH-Zkr" secondAttribute="trailing" id="tu2-K6-A2E"/>
+                            <constraint firstItem="ltF-uk-PhA" firstAttribute="top" secondItem="CFR-YH-Zkr" secondAttribute="top" id="xaN-Gr-xNw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deskView" destination="DK2-LJ-ebL" id="zkH-Nu-UwU"/>
+                        <outlet property="wallView" destination="ltF-uk-PhA" id="Glp-rQ-OSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLE-Jm-Fuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="-375"/>
+        </scene>
+        <!--Best Score View Controller-->
+        <scene sceneID="CC6-M0-ViV">
+            <objects>
+                <viewController storyboardIdentifier="BestScoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uHp-dB-Mr5" customClass="BestScoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jAK-0K-duw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YGH-d6-o31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pMH-AZ-YsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AT-gW-vZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="-426"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Title" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShuffleCupsTitleNameBackground.gif" translatesAutoresizingMaskIntoConstraints="NO" id="PC6-Zd-76V">
+                                <rect key="frame" x="0.0" y="279.5" width="375" height="104"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShuffleTitleName.png" translatesAutoresizingMaskIntoConstraints="NO" id="JLe-yn-gWu">
+                                <rect key="frame" x="37.5" y="290.5" width="300" height="83"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe9-34-iej" userLabel="BestBtn">
+                                <rect key="frame" x="25" y="467" width="161" height="53.5"/>
+                                <state key="normal" image="BestBtn.png"/>
+                                <connections>
+                                    <action selector="showBest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDy-Je-uhY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-AS-n1s" userLabel="HowToPlayBtn">
+                                <rect key="frame" x="107" y="523.5" width="161" height="53.5"/>
+                                <state key="normal" image="HowToPlayBtn.png"/>
+                                <connections>
+                                    <action selector="explainHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lba-AZ-7Wf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-Oz-eTe" userLabel="RankBtn">
+                                <rect key="frame" x="189" y="467" width="161.5" height="53.5"/>
+                                <state key="normal" image="RankBtn.png"/>
+                                <connections>
+                                    <action selector="showRank:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FxR-su-lOU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd3-AH-jJu">
+                                <rect key="frame" x="11.5" y="20" width="67.5" height="67.5"/>
+                                <connections>
+                                    <action selector="switchSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4g-eK-iP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0p-Na-cvp" userLabel="PlayBtn">
+                                <rect key="frame" x="107" y="411" width="161" height="53"/>
+                                <state key="normal" image="PlayBtn.png"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qON-1G-Mad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HDe-Oz-eTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.504" id="00r-pJ-UHX"/>
+                            <constraint firstItem="JLe-yn-gWu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="2nY-un-xUj"/>
+                            <constraint firstItem="0MZ-AS-n1s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35r-2T-e5w"/>
+                            <constraint firstItem="R0p-Na-cvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5SA-nZ-2ss"/>
+                            <constraint firstItem="Xe9-34-iej" firstAttribute="width" secondItem="R0p-Na-cvp" secondAttribute="width" id="6Mc-Pd-2ZZ"/>
+                            <constraint firstItem="PC6-Zd-76V" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="As7-A8-FJe"/>
+                            <constraint firstItem="jd3-AH-jJu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18" id="DnB-UR-amd"/>
+                            <constraint firstItem="PC6-Zd-76V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ggr-zL-dm8"/>
+                            <constraint firstItem="PC6-Zd-76V" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.156" id="OKw-ZS-25n"/>
+                            <constraint firstItem="JLe-yn-gWu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ORy-x6-ljF"/>
+                            <constraint firstItem="jd3-AH-jJu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18" id="OtO-Hk-IQO"/>
+                            <constraint firstItem="JLe-yn-gWu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.125" id="Vil-uu-JEb"/>
+                            <constraint firstItem="0MZ-AS-n1s" firstAttribute="width" secondItem="R0p-Na-cvp" secondAttribute="width" id="WCG-gI-g8v"/>
+                            <constraint firstItem="R0p-Na-cvp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.43" id="WKX-Jp-ohu"/>
+                            <constraint firstItem="R0p-Na-cvp" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.696" id="aYi-4o-qkr"/>
+                            <constraint firstItem="jd3-AH-jJu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.03" id="bUt-0n-jAf"/>
+                            <constraint firstItem="R0p-Na-cvp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="jhp-uh-upF"/>
+                            <constraint firstItem="HDe-Oz-eTe" firstAttribute="top" secondItem="Xe9-34-iej" secondAttribute="top" id="niY-JN-6HE"/>
+                            <constraint firstItem="JLe-yn-gWu" firstAttribute="centerY" secondItem="PC6-Zd-76V" secondAttribute="centerY" id="o8s-l0-7Kf"/>
+                            <constraint firstItem="PC6-Zd-76V" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.575" id="pHj-6Q-fKh"/>
+                            <constraint firstItem="0MZ-AS-n1s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.785" id="q6I-5t-NFH"/>
+                            <constraint firstItem="jd3-AH-jJu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.03" id="rFa-e9-5ct"/>
+                            <constraint firstItem="Xe9-34-iej" firstAttribute="height" secondItem="R0p-Na-cvp" secondAttribute="height" id="rRG-42-FHk"/>
+                            <constraint firstItem="Xe9-34-iej" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.496" id="toa-WO-gn4"/>
+                            <constraint firstItem="HDe-Oz-eTe" firstAttribute="width" secondItem="Xe9-34-iej" secondAttribute="width" id="w8O-lx-CxK"/>
+                            <constraint firstItem="Xe9-34-iej" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.7" id="yfj-O6-aBy"/>
+                            <constraint firstItem="HDe-Oz-eTe" firstAttribute="height" secondItem="Xe9-34-iej" secondAttribute="height" id="yjZ-Yf-5aR"/>
+                            <constraint firstItem="0MZ-AS-n1s" firstAttribute="height" secondItem="R0p-Na-cvp" secondAttribute="height" id="zd2-Df-MLw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bestBtn" destination="Xe9-34-iej" id="UPV-vt-BBN"/>
+                        <outlet property="howToPlayBtn" destination="0MZ-AS-n1s" id="TGZ-PG-4BC"/>
+                        <outlet property="playBtn" destination="R0p-Na-cvp" id="1tO-QC-Tzz"/>
+                        <outlet property="rankBtn" destination="HDe-Oz-eTe" id="Vtw-XI-Y2e"/>
+                        <outlet property="soundBtn" destination="jd3-AH-jJu" id="3lr-dc-mqS"/>
+                        <outlet property="titleBackgroundView" destination="PC6-Zd-76V" id="6By-YO-2Jj"/>
+                        <outlet property="titleLabelView" destination="JLe-yn-gWu" id="9rC-bR-9fc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BestBtn.png" width="450" height="155"/>
+        <image name="Desk" width="375" height="111"/>
+        <image name="HowToPlayBtn.png" width="450" height="155"/>
+        <image name="PlayBtn.png" width="450" height="155"/>
+        <image name="RankBtn.png" width="450" height="155"/>
+        <image name="ShuffleCupsTitleNameBackground.gif" width="900" height="220"/>
+        <image name="ShuffleTitleName.png" width="885" height="230"/>
+        <image name="Wall" width="375" height="555"/>
+    </resources>
+</document>
