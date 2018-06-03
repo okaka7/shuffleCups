@@ -124,61 +124,63 @@ static NSString* kPointsImage = @"points.gif";
         temp = (int)[self.bestScores[i] integerValue];
         
         int placeOfScore =  [self checkplaceOfScore:temp];
-        if(placeOfScore == 4){
-            for (int j = 0; j < 4; j++) {
-            
-                int number;
+        int number;
+        switch (placeOfScore) {
+            case 1:
                 number = temp % 10;
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-                [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
+                [bestScoreViews[i][1] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
                 CGRect rect;
+                rect = CGRectMake(referenceSize.width * scoreViewX, referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
                 
-                rect = CGRectMake(referenceSize.width * scoreViewsX4[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
-                [bestScoreViews[i][j] setFrame:rect];
-                [self.view addSubview:bestScoreViews[i][j]];
-                temp /= 10;
-                
-            }
-        }else if(placeOfScore == 3){
-            for (int j = 0; j < 3; j++) {
-                
-                int number;
-                number = temp % 10;
-                [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
-                CGRect rect;
-                rect = CGRectMake(referenceSize.width * scoreViewsX3[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
-                
-                
-                [bestScoreViews[i][j] setFrame:rect];
-                [self.view addSubview:bestScoreViews[i][j]];
-                temp /= 10;
-                
-            }
-        }else if(placeOfScore == 2){
-            for (int j = 0; j < 2; j++) {
-                
-                int number;
-                number = temp % 10;
-                [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
-                CGRect rect;
-                rect = CGRectMake(referenceSize.width * scoreViewsX2[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
-                
-                [bestScoreViews[i][j] setFrame:rect];
-                [self.view addSubview:bestScoreViews[i][j]];
-                temp /= 10;
-                
-            }
-
-        }else if(placeOfScore == 1){
+                [bestScoreViews[i][1] setFrame:rect];
+                [self.view addSubview:bestScoreViews[i][1]];
+                break;
             
-            int number;
-            number = temp % 10;
-            [bestScoreViews[i][1] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
-            CGRect rect;
-            rect = CGRectMake(referenceSize.width * scoreViewX, referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
+            case 2:
+                for (int j = 0; j < 2; j++) {
+                    number = temp % 10;
+                    [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
+                    CGRect rect;
+                    rect = CGRectMake(referenceSize.width * scoreViewsX2[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
+                    
+                    [bestScoreViews[i][j] setFrame:rect];
+                    [self.view addSubview:bestScoreViews[i][j]];
+                    temp /= 10;
+                    
+                }
+                break;
             
-            [bestScoreViews[i][1] setFrame:rect];
-            [self.view addSubview:bestScoreViews[i][1]];
+            case 3:
+                for (int j = 0; j < 3; j++) {
+                    number = temp % 10;
+                    [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
+                    CGRect rect;
+                    rect = CGRectMake(referenceSize.width * scoreViewsX3[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
+                    
+                    
+                    [bestScoreViews[i][j] setFrame:rect];
+                    [self.view addSubview:bestScoreViews[i][j]];
+                    temp /= 10;
+                    
+                }
+                break;
+            
+            case 4:
+                for (int j = 0; j < 4; j++) {
+                    number = temp % 10;
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+                        [bestScoreViews[i][j] setImage:[UIImage imageNamed:scoreNumberImages[number]]];
+                    CGRect rect;
+                    
+                    rect = CGRectMake(referenceSize.width * scoreViewsX4[j], referenceSize.height * scoreViewsY[i],referenceSize.width * scoreSizeScale.width, referenceSize.height * scoreSizeScale.height);
+                    [bestScoreViews[i][j] setFrame:rect];
+                    [self.view addSubview:bestScoreViews[i][j]];
+                    temp /= 10;
+                    
+                }
+                break;
+            default:
+                break;
         }
         
         UIImageView* pointsView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:kPointsImage]];
