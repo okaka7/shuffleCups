@@ -291,62 +291,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D65F8CB11CB3B7910082E41B = {
-			isa = PBXGroup;
-			children = (
-				D65F8CBC1CB3B7910082E41B /* ShuffleCups */,
-				D65F8CD61CB3B7920082E41B /* ShuffleCupsTests */,
-				D65F8CE11CB3B7920082E41B /* ShuffleCupsUITests */,
-				D65F8CBB1CB3B7910082E41B /* Products */,
-				3D5E13ECFFC3AE705042D60E /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		D65F8CBB1CB3B7910082E41B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D65F8CBA1CB3B7910082E41B /* Shuffle Cups.app */,
-				D65F8CD31CB3B7920082E41B /* SHUFFLE CUPS.xctest */,
-				D65F8CDE1CB3B7920082E41B /* SHUFFLE CUPS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D65F8CBC1CB3B7910082E41B /* ShuffleCups */ = {
-			isa = PBXGroup;
-			children = (
-				D65F8CC01CB3B7910082E41B /* AppDelegate.h */,
-				D65F8CC11CB3B7910082E41B /* AppDelegate.m */,
-				D65F8CC31CB3B7910082E41B /* ViewController.h */,
-				D65F8CC41CB3B7910082E41B /* ViewController.m */,
-				D65F8CFE1CB3C0850082E41B /* GameViewController.h */,
-				D65F8CFF1CB3C0850082E41B /* GameViewController.m */,
-				D65F8D941CB4E4C40082E41B /* BestScoreViewController.h */,
-				D65F8D951CB4E4C40082E41B /* BestScoreViewController.m */,
-				D65F8D471CB3D8E00082E41B /* CupBall.h */,
-				D65F8D481CB3D8E00082E41B /* CupBall.m */,
-				D65F8D4A1CB3D9070082E41B /* Cup.h */,
-				D65F8D4B1CB3D9070082E41B /* Cup.m */,
-				D65F8D4D1CB3D9540082E41B /* Ball.h */,
-				D65F8D4E1CB3D9540082E41B /* Ball.m */,
-				D65F8D501CB3D9990082E41B /* CupView.h */,
-				D65F8D511CB3D9990082E41B /* CupView.m */,
-				D65F8D651CB3DAC00082E41B /* BallView.h */,
-				D65F8D661CB3DAC00082E41B /* BallView.m */,
-				D65F8D151CB3CFC40082E41B /* Scoreboard.h */,
-				D65F8D161CB3CFC40082E41B /* Scoreboard.m */,
-				D65F8D181CB3D0550082E41B /* ScoreboardView.h */,
-				D65F8D191CB3D0550082E41B /* ScoreboardView.m */,
-				D65F8CC61CB3B7910082E41B /* Main.storyboard */,
-				D65F8CC91CB3B7920082E41B /* Assets.xcassets */,
-				D65F8CCB1CB3B7920082E41B /* LaunchScreen.storyboard */,
-				D65F8CCE1CB3B7920082E41B /* Info.plist */,
-				D65F8CBD1CB3B7910082E41B /* Supporting Files */,
-			);
-			path = ShuffleCups;
-			sourceTree = "<group>";
-		};
-		D65F8CBD1CB3B7910082E41B /* Supporting Files */ = {
+		878A0A9F20C4169F00EFD766 /* SingleImages */ = {
 			isa = PBXGroup;
 			children = (
 				D6EEBE841CE4972F00BA9CF0 /* ScoreNumber0.png */,
@@ -396,6 +341,69 @@
 				D67E32CE1CDDC6EC009AC4D6 /* BackBtn.png */,
 				D6EEBE441CDF23D700BA9CF0 /* ShuffleTitleName.png */,
 				D65F8D981CB4E5270082E41B /* points.gif */,
+			);
+			path = SingleImages;
+			sourceTree = "<group>";
+		};
+		D65F8CB11CB3B7910082E41B = {
+			isa = PBXGroup;
+			children = (
+				D65F8CBC1CB3B7910082E41B /* ShuffleCups */,
+				D65F8CD61CB3B7920082E41B /* ShuffleCupsTests */,
+				D65F8CE11CB3B7920082E41B /* ShuffleCupsUITests */,
+				D65F8CBB1CB3B7910082E41B /* Products */,
+				3D5E13ECFFC3AE705042D60E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D65F8CBB1CB3B7910082E41B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65F8CBA1CB3B7910082E41B /* Shuffle Cups.app */,
+				D65F8CD31CB3B7920082E41B /* SHUFFLE CUPS.xctest */,
+				D65F8CDE1CB3B7920082E41B /* SHUFFLE CUPS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65F8CBC1CB3B7910082E41B /* ShuffleCups */ = {
+			isa = PBXGroup;
+			children = (
+				D65F8CC01CB3B7910082E41B /* AppDelegate.h */,
+				D65F8CC11CB3B7910082E41B /* AppDelegate.m */,
+				D65F8CC31CB3B7910082E41B /* ViewController.h */,
+				D65F8CC41CB3B7910082E41B /* ViewController.m */,
+				D65F8CFE1CB3C0850082E41B /* GameViewController.h */,
+				D65F8CFF1CB3C0850082E41B /* GameViewController.m */,
+				D65F8D941CB4E4C40082E41B /* BestScoreViewController.h */,
+				D65F8D951CB4E4C40082E41B /* BestScoreViewController.m */,
+				D65F8D471CB3D8E00082E41B /* CupBall.h */,
+				D65F8D481CB3D8E00082E41B /* CupBall.m */,
+				D65F8D4A1CB3D9070082E41B /* Cup.h */,
+				D65F8D4B1CB3D9070082E41B /* Cup.m */,
+				D65F8D4D1CB3D9540082E41B /* Ball.h */,
+				D65F8D4E1CB3D9540082E41B /* Ball.m */,
+				D65F8D501CB3D9990082E41B /* CupView.h */,
+				D65F8D511CB3D9990082E41B /* CupView.m */,
+				D65F8D651CB3DAC00082E41B /* BallView.h */,
+				D65F8D661CB3DAC00082E41B /* BallView.m */,
+				D65F8D151CB3CFC40082E41B /* Scoreboard.h */,
+				D65F8D161CB3CFC40082E41B /* Scoreboard.m */,
+				D65F8D181CB3D0550082E41B /* ScoreboardView.h */,
+				D65F8D191CB3D0550082E41B /* ScoreboardView.m */,
+				D65F8CC61CB3B7910082E41B /* Main.storyboard */,
+				D65F8CC91CB3B7920082E41B /* Assets.xcassets */,
+				878A0A9F20C4169F00EFD766 /* SingleImages */,
+				D65F8CCB1CB3B7920082E41B /* LaunchScreen.storyboard */,
+				D65F8CCE1CB3B7920082E41B /* Info.plist */,
+				D65F8CBD1CB3B7910082E41B /* Supporting Files */,
+			);
+			path = ShuffleCups;
+			sourceTree = "<group>";
+		};
+		D65F8CBD1CB3B7910082E41B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				D65F8DC01CB8784E0082E41B /* Sound */,
 				D65F8CBE1CB3B7910082E41B /* main.m */,
 				D604438E1CC247E600D04AB1 /* Localizable.strings */,
