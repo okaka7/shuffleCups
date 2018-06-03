@@ -291,6 +291,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		878A0A9F20C4169F00EFD766 /* SingleImages */ = {
+			isa = PBXGroup;
+			children = (
+				D6EEBE841CE4972F00BA9CF0 /* ScoreNumber0.png */,
+				D6EEBE861CE4973900BA9CF0 /* ScoreNumber1.png */,
+				D6EEBE881CE4974200BA9CF0 /* ScoreNumber2.png */,
+				D6EEBE8A1CE4974900BA9CF0 /* ScoreNumber3.png */,
+				D6EEBE8C1CE4975500BA9CF0 /* ScoreNumber4.png */,
+				D6EEBE8E1CE4975E00BA9CF0 /* ScoreNumber5.png */,
+				D6EEBE901CE4976600BA9CF0 /* ScoreNumber6.png */,
+				D6EEBE921CE4976E00BA9CF0 /* ScoreNumber7.png */,
+				D6EEBE941CE4977700BA9CF0 /* ScoreNumber8.png */,
+				D6EEBE961CE4978000BA9CF0 /* ScoreNumber9.png */,
+				D6EEBE761CE1E4B700BA9CF0 /* ArrowBackImage.png */,
+				D6EEBE771CE1E4B700BA9CF0 /* ArrowNextImage.png */,
+				D6EEBE681CE1BBD000BA9CF0 /* ExplanationBackground.gif */,
+				D6EEBE641CE1BA1D00BA9CF0 /* PageNumberImage1.png */,
+				D6EEBE651CE1BA1D00BA9CF0 /* PageNumberImage2.png */,
+				D6EEBE621CE1B50900BA9CF0 /* RetryBtn.png */,
+				D6EEBE601CE1B4CF00BA9CF0 /* TitleBtn.png */,
+				D6EEBE5E1CE0E72900BA9CF0 /* ShuffleCupsTitleNameBackground.gif */,
+				D6EEBE5A1CE0E5DC00BA9CF0 /* ShuffleCupsSoundOff.png */,
+				D6EEBE5B1CE0E5DC00BA9CF0 /* ShuffleCupsSoundOn.png */,
+				D6EEBE521CE0E2D600BA9CF0 /* BestBtn.png */,
+				D6EEBE531CE0E2D600BA9CF0 /* HowToPlayBtn.png */,
+				D6EEBE541CE0E2D600BA9CF0 /* PlayBtn.png */,
+				D6EEBE551CE0E2D600BA9CF0 /* RankBtn.png */,
+				D6EEBE301CDF1F8000BA9CF0 /* ScoreNumber0_GameOverView.png */,
+				D6EEBE311CDF1F8000BA9CF0 /* ScoreNumber1_GameOverView.png */,
+				D6EEBE321CDF1F8000BA9CF0 /* ScoreNumber2_GameOverView.png */,
+				D6EEBE331CDF1F8000BA9CF0 /* ScoreNumber3_GameOverView.png */,
+				D6EEBE341CDF1F8000BA9CF0 /* ScoreNumber4_GameOverView.png */,
+				D6EEBE351CDF1F8000BA9CF0 /* ScoreNumber5_GameOverView.png */,
+				D6EEBE361CDF1F8000BA9CF0 /* ScoreNumber6_GameOverView.png */,
+				D6EEBE371CDF1F8000BA9CF0 /* ScoreNumber7_GameOverView.png */,
+				D6EEBE381CDF1F8000BA9CF0 /* ScoreNumber8_GameOverView.png */,
+				D6EEBE391CDF1F8000BA9CF0 /* ScoreNumber9_GameOverView.png */,
+				D6EEBE2E1CDF1DEE00BA9CF0 /* ScoreNumber0_BestScoreView.png */,
+				D6EEBE1C1CDF1D5500BA9CF0 /* ScoreNumber1_BestScoreView.png */,
+				D6EEBE1D1CDF1D5500BA9CF0 /* ScoreNumber2_BestScoreView.png */,
+				D6EEBE1E1CDF1D5500BA9CF0 /* ScoreNumber3_BestScoreView.png */,
+				D6EEBE1F1CDF1D5500BA9CF0 /* ScoreNumber4_BestScoreView.png */,
+				D6EEBE201CDF1D5500BA9CF0 /* ScoreNumber5_BestScoreView.png */,
+				D6EEBE211CDF1D5500BA9CF0 /* ScoreNumber6_BestScoreView.png */,
+				D6EEBE221CDF1D5500BA9CF0 /* ScoreNumber7_BestScoreView.png */,
+				D6EEBE231CDF1D5500BA9CF0 /* ScoreNumber8_BestScoreView.png */,
+				D6EEBE241CDF1D5500BA9CF0 /* ScoreNumber9_BestScoreView.png */,
+				D67E32CE1CDDC6EC009AC4D6 /* BackBtn.png */,
+				D6EEBE441CDF23D700BA9CF0 /* ShuffleTitleName.png */,
+				D65F8D981CB4E5270082E41B /* points.gif */,
+			);
+			path = SingleImages;
+			sourceTree = "<group>";
+		};
+		87C185DF20C418E6007C0C99 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D68010131CD6230A0068F182 /* powerdown07.wav */,
+				D680100A1CD61FBB0068F182 /* powerup03.wav */,
+				D68010051CD61F240068F182 /* st006.mp3 */,
+				D6800FFB1CD61CB80068F182 /* decision7.wav */,
+				D6800FEF1CD617A90068F182 /* button05.mp3 */,
+				D68CCCD81CD0764A0057D1B3 /* tw029.mp3 */,
+				D68CCCD61CD0761C0057D1B3 /* tw034.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		D65F8CB11CB3B7910082E41B = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +409,8 @@
 				D65F8CC91CB3B7920082E41B /* Assets.xcassets */,
 				D65F8CCB1CB3B7920082E41B /* LaunchScreen.storyboard */,
 				D65F8CCE1CB3B7920082E41B /* Info.plist */,
+				87C185DF20C418E6007C0C99 /* Sound */,
+				878A0A9F20C4169F00EFD766 /* SingleImages */,
 				D65F8CBD1CB3B7910082E41B /* Supporting Files */,
 			);
 			path = ShuffleCups;
@@ -349,54 +419,6 @@
 		D65F8CBD1CB3B7910082E41B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6EEBE841CE4972F00BA9CF0 /* ScoreNumber0.png */,
-				D6EEBE861CE4973900BA9CF0 /* ScoreNumber1.png */,
-				D6EEBE881CE4974200BA9CF0 /* ScoreNumber2.png */,
-				D6EEBE8A1CE4974900BA9CF0 /* ScoreNumber3.png */,
-				D6EEBE8C1CE4975500BA9CF0 /* ScoreNumber4.png */,
-				D6EEBE8E1CE4975E00BA9CF0 /* ScoreNumber5.png */,
-				D6EEBE901CE4976600BA9CF0 /* ScoreNumber6.png */,
-				D6EEBE921CE4976E00BA9CF0 /* ScoreNumber7.png */,
-				D6EEBE941CE4977700BA9CF0 /* ScoreNumber8.png */,
-				D6EEBE961CE4978000BA9CF0 /* ScoreNumber9.png */,
-				D6EEBE761CE1E4B700BA9CF0 /* ArrowBackImage.png */,
-				D6EEBE771CE1E4B700BA9CF0 /* ArrowNextImage.png */,
-				D6EEBE681CE1BBD000BA9CF0 /* ExplanationBackground.gif */,
-				D6EEBE641CE1BA1D00BA9CF0 /* PageNumberImage1.png */,
-				D6EEBE651CE1BA1D00BA9CF0 /* PageNumberImage2.png */,
-				D6EEBE621CE1B50900BA9CF0 /* RetryBtn.png */,
-				D6EEBE601CE1B4CF00BA9CF0 /* TitleBtn.png */,
-				D6EEBE5E1CE0E72900BA9CF0 /* ShuffleCupsTitleNameBackground.gif */,
-				D6EEBE5A1CE0E5DC00BA9CF0 /* ShuffleCupsSoundOff.png */,
-				D6EEBE5B1CE0E5DC00BA9CF0 /* ShuffleCupsSoundOn.png */,
-				D6EEBE521CE0E2D600BA9CF0 /* BestBtn.png */,
-				D6EEBE531CE0E2D600BA9CF0 /* HowToPlayBtn.png */,
-				D6EEBE541CE0E2D600BA9CF0 /* PlayBtn.png */,
-				D6EEBE551CE0E2D600BA9CF0 /* RankBtn.png */,
-				D6EEBE301CDF1F8000BA9CF0 /* ScoreNumber0_GameOverView.png */,
-				D6EEBE311CDF1F8000BA9CF0 /* ScoreNumber1_GameOverView.png */,
-				D6EEBE321CDF1F8000BA9CF0 /* ScoreNumber2_GameOverView.png */,
-				D6EEBE331CDF1F8000BA9CF0 /* ScoreNumber3_GameOverView.png */,
-				D6EEBE341CDF1F8000BA9CF0 /* ScoreNumber4_GameOverView.png */,
-				D6EEBE351CDF1F8000BA9CF0 /* ScoreNumber5_GameOverView.png */,
-				D6EEBE361CDF1F8000BA9CF0 /* ScoreNumber6_GameOverView.png */,
-				D6EEBE371CDF1F8000BA9CF0 /* ScoreNumber7_GameOverView.png */,
-				D6EEBE381CDF1F8000BA9CF0 /* ScoreNumber8_GameOverView.png */,
-				D6EEBE391CDF1F8000BA9CF0 /* ScoreNumber9_GameOverView.png */,
-				D6EEBE2E1CDF1DEE00BA9CF0 /* ScoreNumber0_BestScoreView.png */,
-				D6EEBE1C1CDF1D5500BA9CF0 /* ScoreNumber1_BestScoreView.png */,
-				D6EEBE1D1CDF1D5500BA9CF0 /* ScoreNumber2_BestScoreView.png */,
-				D6EEBE1E1CDF1D5500BA9CF0 /* ScoreNumber3_BestScoreView.png */,
-				D6EEBE1F1CDF1D5500BA9CF0 /* ScoreNumber4_BestScoreView.png */,
-				D6EEBE201CDF1D5500BA9CF0 /* ScoreNumber5_BestScoreView.png */,
-				D6EEBE211CDF1D5500BA9CF0 /* ScoreNumber6_BestScoreView.png */,
-				D6EEBE221CDF1D5500BA9CF0 /* ScoreNumber7_BestScoreView.png */,
-				D6EEBE231CDF1D5500BA9CF0 /* ScoreNumber8_BestScoreView.png */,
-				D6EEBE241CDF1D5500BA9CF0 /* ScoreNumber9_BestScoreView.png */,
-				D67E32CE1CDDC6EC009AC4D6 /* BackBtn.png */,
-				D6EEBE441CDF23D700BA9CF0 /* ShuffleTitleName.png */,
-				D65F8D981CB4E5270082E41B /* points.gif */,
-				D65F8DC01CB8784E0082E41B /* Sound */,
 				D65F8CBE1CB3B7910082E41B /* main.m */,
 				D604438E1CC247E600D04AB1 /* Localizable.strings */,
 			);
@@ -419,20 +441,6 @@
 				D65F8CE41CB3B7920082E41B /* Info.plist */,
 			);
 			path = ShuffleCupsUITests;
-			sourceTree = "<group>";
-		};
-		D65F8DC01CB8784E0082E41B /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-				D68010131CD6230A0068F182 /* powerdown07.wav */,
-				D680100A1CD61FBB0068F182 /* powerup03.wav */,
-				D68010051CD61F240068F182 /* st006.mp3 */,
-				D6800FFB1CD61CB80068F182 /* decision7.wav */,
-				D6800FEF1CD617A90068F182 /* button05.mp3 */,
-				D68CCCD81CD0764A0057D1B3 /* tw029.mp3 */,
-				D68CCCD61CD0761C0057D1B3 /* tw034.mp3 */,
-			);
-			name = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
